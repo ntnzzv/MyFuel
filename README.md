@@ -20,7 +20,7 @@ access to adjusting tarrifs, adding sales, customer managment and much more.
 
 ### The stages of re-fueling:
 
-![buy-fuel](https://github.com/ntnzzv/MyFuel-Petrolium-Inc./blob/master/App-Images/buy.gif)
+![buy-fuel](https://github.com/ntnzzv/MyFuel-Petrolium-Inc./blob/master/App-Images/buyfuel.gif)
 
 ### The stages of ordering fuel:
 
