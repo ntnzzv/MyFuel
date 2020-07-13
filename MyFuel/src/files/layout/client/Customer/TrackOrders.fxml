@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="trackOrdersPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="1072.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Customer.TrackOrdersController">
+   <children>
+      <AnchorPane layoutX="18.0" layoutY="33.0" prefWidth="1018.0">
+         <children>
+            <Text layoutY="12.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="Track Orders" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="6.0" />
+         </children>
+      </AnchorPane>
+      <ScrollPane hbarPolicy="NEVER" layoutX="18.0" layoutY="115.0" prefHeight="489.0" prefWidth="1038.0" style="-fx-background-color: transparent;">
+         <content>
+            <FlowPane fx:id="flowPane" alignment="BASELINE_LEFT" prefWidth="1036.0" vgap="12.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" />
+               </children>
+            </FlowPane>
+         </content>
+      </ScrollPane>
+      <ImageView fx:id="books1" fitHeight="30.0" fitWidth="67.0" layoutX="879.0" layoutY="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/trackorders/book-stack.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="woman" fitHeight="270.0" fitWidth="166.0" layoutX="901.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/trackorders/woman-sitting-texting.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="books2" fitHeight="39.0" fitWidth="67.0" layoutX="892.0" layoutY="570.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/trackorders/book-stack.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="books3" fitHeight="39.0" fitWidth="67.0" layoutX="881.0" layoutY="539.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/trackorders/book-stack.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="createdNoCarsPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="1072.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MarketingDepartmentRepresentative.CustomerNoVehiclesController">
+   <children>
+      <Pane layoutX="225.0" layoutY="215.0" prefHeight="206.0" prefWidth="561.0" style="-fx-border-color: #3f04ca;" />
+      <HBox fx:id="msg" layoutX="365.0" layoutY="279.0" prefHeight="35.0" prefWidth="350.0">
+         <children>
+            <Label fx:id="label" text="Customer Saved Successfully" textFill="#3f04ca">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="396.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/logo_title_new.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

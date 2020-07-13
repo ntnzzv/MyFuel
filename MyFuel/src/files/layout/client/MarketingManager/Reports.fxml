@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="1072.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MarketingManager.marketingReportsController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" styleClass="h1" text="Reports">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="53.0" prefHeight="36.0" prefWidth="139.0" styleClass="h3" text="select sale">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="reportsCombo" layoutX="486.0" layoutY="58.0" prefHeight="25.0" prefWidth="87.0" promptText="sale ID" />
+      <TableView fx:id="reportsTable" layoutX="678.0" layoutY="19.0" prefHeight="290.0" prefWidth="360.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy></TableView>
+      <Separator layoutX="2.0" layoutY="311.0" prefHeight="7.0" prefWidth="1072.0" />
+      <TextField fx:id="clientsField" layoutX="486.0" layoutY="174.0" prefHeight="36.0" prefWidth="105.0" styleClass="textfield1" />
+      <Label layoutX="230.0" layoutY="174.0" prefHeight="36.0" prefWidth="212.0" styleClass="h3" text="number of clients in sale">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="233.0" prefHeight="36.0" prefWidth="150.0" styleClass="h3" text="sum of purchases">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sumField" layoutX="486.0" layoutY="233.0" prefHeight="36.0" prefWidth="105.0" styleClass="textfield1" />
+      <TableView fx:id="purchasesTable" layoutX="677.0" layoutY="318.0" prefHeight="301.0" prefWidth="360.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <PieChart fx:id="pieChart" layoutX="148.0" layoutY="315.0" prefHeight="307.0" prefWidth="399.0" startAngle="31.6" title="Costumers - suppliers distribution" />
+   </children>
+</Pane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+
+<Pane id="StartServer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="1120.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Server.StartServerController">
+   <children>
+      <Pane fx:id="startButton" layoutX="481.0" layoutY="558.0" onMouseClicked="#startServerButton" prefHeight="48.0" prefWidth="160.0" styleClass="button1">
+         <children>
+            <Text layoutX="55.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start" textOrigin="CENTER" />
+         </children>
+      </Pane>
+      <TextField fx:id="ip" layoutX="345.0" layoutY="419.0" prefHeight="35.0" prefWidth="206.0" text="bwdks5pz9oy2ihgpki8i-mysql.services.clever-cloud.com:20456" />
+      <TextField fx:id="schema" layoutX="571.0" layoutY="419.0" prefHeight="35.0" prefWidth="206.0" text="bwdks5pz9oy2ihgpki8i" />
+      <TextField fx:id="username" layoutX="345.0" layoutY="494.0" prefHeight="35.0" prefWidth="206.0" text="uhwrnbb2fgrpofai" />
+      <PasswordField fx:id="password" layoutX="571.0" layoutY="494.0" prefHeight="35.0" prefWidth="206.0" text="jKnTpVowm84GhG5D9yO9" />
+      <Text layoutX="345.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+      <Text layoutX="571.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Schema" />
+      <Text layoutX="345.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+      <Text layoutX="571.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <Pane id="serverTag" layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="87.0">
+         <children>
+            <Text layoutX="9.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SERVER" textAlignment="CENTER" wrappingWidth="68.32421875" />
+         </children>
+      </Pane>
+      <Text layoutX="14.0" layoutY="612.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="errorMessage" text="Could not connect to the database." visible="false" />
+      <Circle fill="#465fc70d" layoutX="560.0" layoutY="154.0" radius="135.0" stroke="#32a9a11a" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#465fc71a" layoutX="560.0" layoutY="153.0" radius="115.0" stroke="#32a89e26" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#465fc721" layoutX="560.0" layoutY="151.0" radius="95.0" stroke="#32a89e40" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#f5f4f7" layoutX="560.0" layoutY="150.0" radius="75.0" stroke="#f5f4f7" strokeType="INSIDE" />
+      <ImageView fitHeight="202.0" fitWidth="90.0" layoutX="515.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/logo_new.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="177.0" layoutX="471.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/logo_text_new.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

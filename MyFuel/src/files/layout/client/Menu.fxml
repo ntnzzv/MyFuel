@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane fx:id="menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="1120.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuController">
+   <children>
+      <Pane fx:id="content" layoutX="60.0" prefHeight="630.0" prefWidth="1060.0" />
+      <ScrollPane fx:id="scrollPane" focusTraversable="false" hbarPolicy="NEVER" onMouseEntered="#expand" onMouseExited="#collapse" prefHeight="630.0" prefWidth="60.0">
+         <content>
+            <VBox fx:id="sideMenu" alignment="TOP_CENTER" prefWidth="240.0" />
+         </content></ScrollPane>
+   </children>
+</Pane>

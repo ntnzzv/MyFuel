@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane id="RunningServer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="1120.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Server.RunningServerController">
+   <children>
+      <TextArea fx:id="console" editable="false" focusTraversable="false" layoutX="714.0" layoutY="87.0" prefHeight="529.0" prefWidth="392.0" wrapText="true" />
+      <Text id="consoleTag" layoutX="714.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title1" text="Console" />
+      <ImageView fitHeight="37.0" fitWidth="220.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/logo_title_new.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="closeButton" layoutX="14.0" layoutY="568.0" onMouseClicked="#close" prefHeight="48.0" prefWidth="160.0" styleClass="button1">
+         <children>
+            <Text layoutX="51.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Close" textOrigin="CENTER" />
+         </children>
+      </Pane>
+      <Text layoutX="14.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title1" text="Connected Users" />
+      <HBox fx:id="connectedIPBox" alignment="CENTER" layoutX="1120.0" layoutY="14.0">
+         <children>
+            <Text fx:id="connectedIP" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" textAlignment="CENTER" />
+         </children>
+      </HBox>
+      <ListView fx:id="userList" focusTraversable="false" layoutX="14.0" layoutY="87.0" prefHeight="185.0" prefWidth="663.0" />
+   </children>
+</Pane>

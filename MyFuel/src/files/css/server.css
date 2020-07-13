@@ -1,0 +1,101 @@
+/*
+ * COLORS
+ * ------
+ * #455DC7		LAVENDER
+ * #F5F4F7		BACKGROUND
+ */
+
+#StartServer, #RunningServer
+{
+	-fx-background-color: #F5F4F7;
+	-fx-font-family: 'Segoe UI';
+}
+
+#StartServer .errorMessage
+{
+	-fx-fill: red;
+	-fx-font-size: 12px;
+}
+
+.button1
+{
+	-fx-background-color: #455DC7;
+	-fx-background-radius: 3px;
+	-fx-cursor: hand;
+}
+
+.button1:hover { -fx-opacity: 0.9; }
+
+.button1 Text
+{
+	-fx-fill: white;
+	-fx-font-size: 24px;
+}
+
+#StartServer > Text
+{
+	-fx-font-size: 14px;
+	-fx-fill: #6b6b6b;}
+
+#StartServer TextField, PasswordField
+{
+	-fx-background-color: -fx-text-box-border, -fx-control-inner-background;
+	-fx-font-size: 18px;
+}
+
+#StartServer TextField:focused, PasswordField:focused
+{
+	-fx-text-box-border: #455DC7;
+}
+
+#StartServer #serverTag
+{
+	-fx-border-color: #455DC7;
+	-fx-border-width: 2px;
+	-fx-border-radius: 3px;
+}
+
+#StartServer #serverTag > Text
+{
+	-fx-font-size: 14px;
+	-fx-font-weight: bold;
+	-fx-fill: #455DC7;
+}
+
+#RunningServer #console
+{
+	-fx-font-family: 'Courier New';
+	-fx-font-size: 12px;
+	-fx-background-color: -fx-text-box-border, -fx-control-inner-background;
+}
+
+#RunningServer #console:focused
+{
+	-fx-text-box-border: #455DC7;
+}
+
+.title1
+{
+	-fx-font-size: 14px;
+	
+}
+
+#connectedIPBox
+{
+	-fx-border-color: #455DC7;
+	-fx-border-width: 2px;
+	-fx-border-radius: 3px;
+}
+
+#connectedIP
+{
+	-fx-fill: #455DC7;
+}
+
+.disabled { -fx-opacity: 0.5; }
+
+#connectedIPBox
+{
+	-fx-padding: 3px 6px 3px 6px;
+}
+

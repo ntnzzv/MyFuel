@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="MarketingRepCreatDiscount" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="1120.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MarketingDepartmentRepresentative.CreatDiscountTemplateController">
+   <children>
+      <TableView fx:id="TemplateTable" layoutX="188.0" layoutY="96.0" onMouseClicked="#SelectRow" prefHeight="206.0" prefWidth="721.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy></TableView>
+      <Text fill="#1d1f22" layoutX="11.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creat Discount Template" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="227.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Template Name:" />
+      <TextField fx:id="TextSaleName" layoutX="222.0" layoutY="406.0" />
+      <Text layoutX="459.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date:" />
+      <DatePicker fx:id="DateStart" layoutX="451.0" layoutY="404.0" />
+      <Text layoutX="458.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date:" />
+      <DatePicker fx:id="DateEnd" layoutX="451.0" layoutY="474.0" />
+      <Text layoutX="704.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hours ON:" />
+      <Text layoutX="705.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hours OFF:" />
+      <TextField fx:id="HoursON" layoutX="698.0" layoutY="404.0" />
+      <TextField fx:id="HoursOFF" layoutX="698.0" layoutY="475.0" />
+      <Text layoutX="220.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text layoutX="698.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text layoutX="697.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text layoutX="450.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text layoutX="452.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text layoutX="229.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discount:" />
+      <Text layoutX="222.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <TextField fx:id="TextDiscount" layoutX="222.0" layoutY="473.0" />
+      <Text fill="#5d9bf7" layoutX="270.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#5d9bf7" layoutX="519.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#5d9bf7" layoutX="748.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="116.0" fitWidth="459.0" layoutY="514.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/orderheatingfuel/hills.png" />
+         </image>
+         <effect>
+            <DropShadow color="#a8a5a5" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="plant2" fitHeight="94.0" fitWidth="85.0" layoutX="8.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/orderheatingfuel/plant-1.png" />
+         </image>
+         <effect>
+            <DropShadow color="#807e7e" height="5.0" radius="2.0" width="5.0" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="brownTree" fitHeight="68.0" fitWidth="160.0" layoutX="312.0" layoutY="567.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/newCustomer/browntree.png" />
+         </image>
+         <effect>
+            <DropShadow color="#908c8c" height="3.0" radius="1.0" width="3.0" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="circle" fitHeight="147.0" fitWidth="349.0" layoutX="-61.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/newCustomer/circle-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud1" fitHeight="78.0" fitWidth="97.0" layoutX="99.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/newCustomer/Cloud%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud2" fitHeight="56.0" fitWidth="97.0" layoutX="7.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/newCustomer/Cloud%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud3" fitHeight="56.0" fitWidth="97.0" layoutX="91.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/newCustomer/Cloud%201.png" />
+         </image>
+      </ImageView>
+      <Text disable="true" fill="#726b6b" layoutX="352.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\%" />
+      <Text fx:id="RemoveText" layoutX="190.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="select the row from the table before click on *Update or *Remove" />
+      <Line endX="209.0" layoutX="9.0" layoutY="48.0" startX="-9.0" stroke="#6f6f6f" />
+      <Text layoutX="12.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fill in the required information to proceed with your request.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="56.0" fitWidth="200.0" layoutX="80.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/newCustomer/Running%20woman.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="createdPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="1072.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MarketingDepartmentRepresentative.CustomerCreatedController">
+   <children>
+      <ImageView fitHeight="512.0" fitWidth="1079.0" layoutX="-3.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/circle-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="222.0" fitWidth="475.0" layoutX="807.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/Tree%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="575.0" fitWidth="719.0" layoutX="-38.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/rock%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="436.0" fitWidth="643.0" layoutX="465.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/rock%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="317.0" fitWidth="451.0" layoutX="-66.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/Autumn%20trees.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud3" fitHeight="150.0" fitWidth="200.0" layoutX="520.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/Cloud%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="338.0" fitWidth="600.0" layoutX="401.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/browntree.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="173.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/Running%20woman.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="140.0" layoutX="590.0" layoutY="456.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/sitting-leaning.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="199.0" fitWidth="451.0" layoutX="537.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/Tree%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-7.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/waving.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="104.0" fitWidth="237.0" layoutX="887.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/man-leaning.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="127.0" layoutX="807.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/writing-on-ground.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud2" fitHeight="104.0" fitWidth="260.0" layoutX="314.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/Cloud%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud1" fitHeight="127.0" fitWidth="221.0" layoutX="417.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/Cloud%201.png" />
+         </image>
+      </ImageView>
+      <HBox fx:id="msg" layoutX="299.0" layoutY="318.0" prefHeight="35.0" prefWidth="332.0">
+         <children>
+            <Label fx:id="label" text="Customer Saved Successfully" textFill="#9b2e2e">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</Pane>

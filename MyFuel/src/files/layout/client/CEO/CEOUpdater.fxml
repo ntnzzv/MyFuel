@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="CeoUpMaxPrice" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="1120.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CEO.CEOUpdateController">
+   <children>
+      <TableView fx:id="TableFuel" layoutX="165.0" layoutY="118.0" onMouseClicked="#selectRow" prefHeight="168.0" prefWidth="304.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy></TableView>
+      <Text layoutX="175.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter new price:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="TextPrice" disable="true" layoutX="168.0" layoutY="394.0" />
+      <Text fill="#1e1212" layoutX="13.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fill in all the required fields before proceeding.">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text fill="#171515" layoutX="169.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <ImageView fx:id="cloud1" fitHeight="150.0" fitWidth="200.0" layoutX="772.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/newCustomer/Cloud%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud2" fitHeight="56.0" fitWidth="236.0" layoutX="575.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/newCustomer/Cloud%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud3" fitHeight="150.0" fitWidth="200.0" layoutX="660.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/newCustomer/Cloud%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="man" fitHeight="244.0" fitWidth="181.0" layoutX="685.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/orderheatingfuel/man-sitting-laptop.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="table" fitHeight="121.0" fitWidth="310.0" layoutX="660.0" layoutY="507.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/orderheatingfuel/trestle-table.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="laptop" fitHeight="403.0" fitWidth="108.0" layoutX="779.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/orderheatingfuel/laptop-1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="notif" fitHeight="42.0" fitWidth="58.0" layoutX="830.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/orderheatingfuel/email-notification.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="documents" fitHeight="69.0" fitWidth="58.0" layoutX="891.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/orderheatingfuel/docs.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="msg" fitHeight="42.0" fitWidth="58.0" layoutX="815.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/orderheatingfuel/speech-modal-3.png" />
+         </image>
+      </ImageView>
+      <Line endX="72.5" layoutX="108.0" layoutY="48.0" startX="-108.0" />
+      <Text fill="#0b0f14" layoutX="12.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update max price" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="166.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="select a row from the table before click on *Update" textAlignment="CENTER">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="cloud21" fitHeight="56.0" fitWidth="236.0" layoutX="615.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/newCustomer/Cloud%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plant" fitHeight="103.0" fitWidth="62.0" layoutX="591.0" layoutY="527.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/illustrations/orderheatingfuel/plant-3.png" />
+         </image>
+      </ImageView>
+      <DialogPane fx:id="MassageError" contentText="The new price is higher than the maximum price, please try again." layoutX="156.0" layoutY="507.0" prefHeight="43.0" prefWidth="370.0" style="-fx-background-color: #f14d45;" visible="false">
+         <effect>
+            <DropShadow color="#d74f4f" />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </DialogPane>
+   </children>
+</Pane>

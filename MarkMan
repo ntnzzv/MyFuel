@@ -1,0 +1,9 @@
+
+CLINK D:\Tasks\F>git add . 
+
+CLINK D:\Tasks\F>git commit -m -add 
+[master 79e5272] -add
+ 1 file changed, 2 insertions(+)
+ create mode 100644 MarkMan
+
+CLINK D:\Tasks\F>git push -u origin master 

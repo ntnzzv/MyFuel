@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="planInfo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="1072.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MarketingDepartmentRepresentative.AddNewCustomer_PlanInfo_Controller">
+   <children>
+      <Label layoutX="29.0" layoutY="23.0" text="Add New Customer">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="14.0" layoutY="54.0" prefHeight="0.0" prefWidth="553.0" />
+      <Label layoutX="63.0" layoutY="121.0" text="Fill in the required information ">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="95.0" text="Plan Information">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="152.0" text=" Service Plan">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="214.0" text="Dalkan (optional)">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="282.0" text="Purchase Plan (optional)">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="servicePlanComboBox" layoutX="63.0" layoutY="169.0" prefWidth="150.0" />
+      <ComboBox fx:id="dalkanComboBox" layoutX="63.0" layoutY="233.0" prefHeight="25.0" prefWidth="150.0" />
+      <ComboBox fx:id="purchasePlanComboBox" layoutX="63.0" layoutY="303.0" onAction="#showPurchasePlanOptions" prefWidth="150.0" />
+      <ComboBox fx:id="option1ComboBox" layoutX="63.0" layoutY="348.0" prefHeight="25.0" prefWidth="69.0" />
+      <ComboBox fx:id="option2ComboBox" layoutX="146.0" layoutY="348.0" prefHeight="25.0" prefWidth="69.0" />
+      <ComboBox fx:id="option3ComboBox" layoutX="228.0" layoutY="348.0" prefHeight="25.0" prefWidth="69.0" />
+      <Label layoutX="49.0" layoutY="168.0" text="*">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="circle" fitHeight="582.0" fitWidth="997.0" layoutX="146.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/circle-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="table" fitHeight="179.0" fitWidth="501.0" layoutX="454.0" layoutY="469.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/desk-1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="woman" fitHeight="141.0" fitWidth="330.0" layoutX="488.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/woman-lying-down.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="books" fitHeight="73.0" fitWidth="137.0" layoutX="726.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/bookshelf-1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lamp" fitHeight="148.0" fitWidth="350.0" layoutX="487.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/hanging-light.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plant" fitHeight="162.0" fitWidth="244.0" layoutX="306.0" layoutY="519.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/illustrations/newCustomer/plant-2.png" />
+         </image>
+      </ImageView>
+      <BorderPane fx:id="servicePlanError" layoutX="230.0" layoutY="168.0" prefHeight="27.0" prefWidth="207.0" style="-fx-border-color: red;">
+         <center>
+            <Label text="Plan Doesn't Match Customer" textFill="RED" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="dalkanError" layoutX="231.0" layoutY="233.0" prefHeight="25.0" prefWidth="150.0" style="-fx-border-color: red;">
+         <center>
+            <Label text="Credit Card Needed" textFill="RED" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="purchasePlanError" layoutX="57.0" layoutY="396.0" prefHeight="38.0" prefWidth="244.0" style="-fx-border-color: red;">
+         <center>
+            <Label text="Please Choose Different Stations" textFill="RED" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</Pane>

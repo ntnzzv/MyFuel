@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane fx:id="customPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="119.0" prefWidth="187.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CustomLoginController">
+   <children>
+      <TextField fx:id="ip" layoutX="13.0" layoutY="24.0" prefHeight="25.0" prefWidth="149.0" promptText="IP Address" styleClass="textfield1" />
+      <TextField fx:id="port" layoutX="14.0" layoutY="70.0" prefHeight="25.0" prefWidth="77.0" promptText="Port" styleClass="textfield1" />
+   </children>
+</Pane>

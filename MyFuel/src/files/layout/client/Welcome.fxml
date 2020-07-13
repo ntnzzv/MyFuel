@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="welcomePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="1072.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.WelcomeController">
+   <children>
+      <Text fx:id="welcomeTitle" layoutX="18.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="18.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="Fuel Prices" wrappingWidth="144.10546875" />
+      <Text layoutX="510.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="News" wrappingWidth="144.10546875" />
+      <HBox fx:id="welcomePricing" layoutX="18.0" layoutY="140.0" prefHeight="120.0" prefWidth="422.0" />
+      <HBox fx:id="WelcomeNews" layoutX="507.0" layoutY="139.0" prefHeight="120.0" prefWidth="452.0" />
+      <ImageView fx:id="bg" fitHeight="416.0" fitWidth="434.0" layoutX="700.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/illustrations/welcome/circle-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mountain" fitHeight="102.0" fitWidth="424.0" layoutX="704.0" layoutY="597.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/illustrations/welcome/rock-1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud2" fitHeight="44.0" fitWidth="186.0" layoutX="937.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/illustrations/welcome/cloud-2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud1" fitHeight="35.0" fitWidth="240.0" layoutX="627.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/illustrations/welcome/cloud-1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="man" fitHeight="288.0" fitWidth="136.0" layoutX="883.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/illustrations/welcome/man-walking.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

@@ -1,0 +1,270 @@
+/*
+ * COLORS:
+ * #090c1a		NIGHT
+ * #455DC7		LAVENDER
+ * #F5F4F7		BACKGROUND
+ * #ed3939		ERR
+ */
+
+.disabled { -fx-opacity: 0.5; }
+
+#content { -fx-background-color: #F5F4F7; }
+
+#loginSettings { -fx-opacity: 0.5; }
+#loginSettings:hover { -fx-opacity: 1; -fx-cursor: hand; }
+
+* {	-fx-font-family: 'Roboto'; }
+.root { -fx-focus-color: transparent; -fx-faint-focus-color: transparent; }
+
+
+#dalkanPane #name { -fx-fill: #455DC7; -fx-font-weight: bold; }
+#dalkanReadyBox { -fx-padding: 12px; -fx-background-color: #32a98d; -fx-background-radius: 6px; }
+#dalkanReadyBox Text { -fx-fill: white; -fx-font-size: 18px; }
+
+#dalkanPane2 #barBox, #orderPanePurchase #barBox { -fx-border-width: 3px; -fx-border-color: #32a9a1; -fx-border-radius: 3px; -fx-padding: 6px; }
+#dalkanPane2 #loadingBar, #orderPanePurchase #loadingBar { -fx-background-color: #32a98d; -fx-background-radius: 3px; }
+#dalkanPane2 .finishedLoading, #orderPanePurchase .finishedLoading { -fx-background-color: #455DC7 !important; }
+#dalkanPane2 .dalkanLoadingText, #orderPanePurchase .dalkanLoadingText { -fx-font-size: 16px; -fx-font-weight: bold; }
+#dalkanPane2 #receipt { -fx-background-color: white; -fx-background-radius: 6px; -fx-padding: 12px; }
+#dalkanPane2 #receiptValue Text { -fx-font-weight: bold; }
+#dalkanPane2 #receipt Text { -fx-font-size: 14px; }
+#dalkanPane2 .totalText { -fx-font-size: 18px !important; }
+#dalkanPane2 .totalValue { -fx-fill: #455DC7; -fx-font-size: 18px !important; }
+
+.customerNameThanks { -fx-font-size: 16px; -fx-fill: #455DC7; -fx-font-weight: bold; }
+
+#login { -fx-background-color: #F5F4F7; }
+
+#login TextField, PasswordField
+{
+	-fx-font-size: 16px;
+	-fx-background-color: white;
+	-fx-padding: 0px 30px 0px 12px;
+	-fx-prompt-text-fill: #bababa;
+}
+
+#login #loginButton
+{
+	-fx-background-color: #455DC7;
+	-fx-background-radius: 3px;
+	-fx-cursor: hand;
+	-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 10, 0.5, 0, 3);
+}
+
+#login #loginButton Text { -fx-fill: white; -fx-font-size: 18px; }
+
+#login #loginButton:hover { -fx-opacity: 0.9; }
+
+#menu #scrollPane
+{
+	-fx-focus-color: transparent; -fx-background: white; -fx-padding: 0;
+	-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 12, 0.2, 0, 3);
+}
+
+#menu #sideMenu .menuIcon { -fx-padding: 18px; }
+#menu #sideMenu .menuLabel Text { -fx-font-family: 'Roboto'; -fx-font-size: 16px; -fx-fill: #455DC7; }
+
+
+#menu #sideMenu .menuButton { -fx-opacity: 0.5; -fx-cursor: hand; }
+#menu #sideMenu .menuButton:hover { -fx-background-color: #F8F8F8; -fx-opacity: 1; }
+
+#menu #sideMenu .menuButton.selected { -fx-opacity: 1; }
+
+.buttonHover { -fx-background-color: #F8F8F8; }
+.buttonHover Text { -fx-fill: #455dc7; }
+
+.errorMessage { -fx-background-radius: 3px; -fx-padding: 6px 9px; -fx-background-color: #ebebeb; }
+
+.errorMessage > Text { -fx-fill: #ed3939; -fx-font-size: 12px; }
+
+.emptyTextField { -fx-border-color: #ed3939 !important; }
+.emptyCheckbox { -fx-border-color: red !important; }
+
+.placeholder { -fx-fill: #b8b8b8; -fx-font-size: 16px; }
+
+#welcomeTitle { -fx-font-size: 30px; -fx-fill: #4d3e3e; }
+
+.alert { -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 10, 0.5, 0, 3); -fx-background-color: white; -fx-background-radius: 6px; }
+.alert > Text { -fx-font-weight: bold; -fx-font-family: 'Calibri Light'; -fx-font-size: 18px;}
+
+.alert .yes { -fx-background-color: #455DC7; -fx-background-radius: 6px; -fx-cursor: hand; }
+.alert .yes:hover { -fx-opacity: 0.9; }
+.alert .yes Text {	-fx-fill: white; -fx-font-size: 18px; }
+.alert .no { -fx-fill: #4d3e3e; -fx-cursor: hand; }
+.alert .no:hover { -fx-opacity: 0.75; }
+
+
+.h1 { -fx-font-size: 30px; }
+.h2 { -fx-font-size: 24px; }
+.h3 { -fx-font-size: 18px; }
+.h4 { -fx-font-size: 16px; }
+.h5b { -fx-font-size: 14px; }
+.required { -fx-fill: #ed3939; }
+
+#welcomePricing { }
+#welcomePricing .priceItem { -fx-background-radius: 6px ; }
+#welcomePricing .priceItem:hover { -fx-opacity: 0.95; }
+#welcomePricing .priceItem Text { -fx-fill: white; }
+#welcomePricing .priceItem .priceTitle { -fx-font-size: 16px; }
+#welcomePricing .priceItem .priceValue { -fx-font-size: 24px; -fx-font-weight: bold; }
+#welcomePricing #Diesel { -fx-background-color: #32a9a1; }
+#welcomePricing #HeatingFuel { -fx-background-color: #32a98d; }
+#welcomePricing #Petrol95 { -fx-background-color: #32a979; }
+#welcomePricing #Scooter { -fx-background-color: #32a966; }
+
+.emptyRequiredField { -fx-border-color: #ed3939; }
+
+.button1 { -fx-background-color: #455DC7; -fx-background-radius: 3px; -fx-cursor: hand; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 10, 0.5, 0, 3); }
+.button1 Text { -fx-font-size: 18px; -fx-fill: white; }
+.button1:hover { -fx-opacity: 0.9; }
+
+.button2 { -fx-background-color: white; -fx-border-color: #d9d9d9; -fx-border-width: 1px; -fx-cursor: hand; }
+.button2 Text { -fx-font-size: 14px; }
+.button2:hover { -fx-border-color: #455DC7; }
+
+.button3 { -fx-background-color: #32a979; -fx-cursor: hand; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 10, 0.5, 0, 3); -fx-background-radius: 3px; }
+.button3 Text { -fx-font-size: 18px; -fx-fill: white; }
+.button3:hover { -fx-opacity: 0.9; }
+
+.backButton { -fx-background-color: transparent; -fx-border-color: #455DC7; -fx-border-width: 2px; -fx-border-radius: 3px; -fx-effect: none; }
+.backButton Text { -fx-fill: black; }
+
+.addCarButton1 { -fx-background-color: #455DC7; -fx-background-radius: 3px; -fx-cursor: hand; }
+.addCarButton1 Text { -fx-font-size: 12px; -fx-fill: white; -fx-font-weight: bold; }
+.addCarButton1:hover { -fx-opacity: 0.9; }
+
+.dalkanButton { -fx-background-color: #32a9a1; -fx-cursor: hand; -fx-background-radius: 0 0 30px 0; }
+.dalkanButton Text { -fx-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; }
+.dalkanButton:hover { -fx-opacity: 0.9; }
+
+.instructions { -fx-fill: #455DC7; -fx-font-size: 15px; }
+
+.textfield1 { -fx-font-size: 14px; -fx-background-color: white; -fx-border-color: #d9d9d9; }
+.textfield1:focused { -fx-border-color: #455DC7; }
+
+.textfield2 { -fx-font-size: 18px !important; }
+
+.textfield3 { -fx-font-size: 14px; -fx-background-color: white; -fx-border-color: white; -fx-border-radius: 3px; -fx-background-radius: 3px; }
+
+
+#orderProgress, #fuelProgress { -fx-padding: 6px; -fx-background-color: white; -fx-background-radius: 6px; }
+
+
+#orderPane .date-picker { -fx-border-color: transparent;  }
+#orderPane .date-picker:focused { -fx-border-color: white; }
+
+.date-picker-popup > * > .day-cell { -fx-padding: 6px 12px; }
+.date-picker-popup > * > .day-cell:hover,
+.date-picker-popup > * > .selected,
+.date-picker-popup > * > .previous-month.selected, .date-picker-popup > * > .next-month.selected { -fx-background: #455DC7; }
+.date-picker-popup > * > .day-cell:focused:hover,.date-picker-popup > * > .today:focused:hover,
+.date-picker-popup > * > .selected:focused, .date-picker-popup > * > .today.selected:focused { -fx-background-color: #455DC7; }
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover { -fx-background-color: #455DC7; -fx-text-fill: white; }
+.combo-box-popup .list-view .list-cell:filled:hover { -fx-background-color: #455DC7; -fx-text-fill: white; }
+
+
+.tooltipTitle { -fx-border-color: #455DC7; -fx-padding: 3px 9px; -fx-cursor: hand; -fx-border-style: dotted;  }
+.tooltipTitle Text { -fx-fill: #455DC7; }
+.tooltipTitle:hover { -fx-opacity: 0.75; }
+
+.tooltip2 > VBox { -fx-padding: 6px 9px; }
+.tooltip2 Text { -fx-font-weight: bold; }
+
+.tooltipExp { -fx-background-color: #32a98d; -fx-padding: 9px; -fx-background-radius: 3px; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.12), 10, 0.5, 0, 3); }
+.tooltipExp Text { -fx-fill: white; -fx-font-size: 16px; }
+
+
+.table-view{
+	-fx-base: #fbf9fa;
+	-fx-control-inner-background: #fbf9fa;
+	-fx-background-color:transparent;
+	-fx-table-cell-border-color: transparent;
+	-fx-selection-bar-non-focused: #008287 ;
+	-fx-border-color: #32a979;
+	-fx-border-radius: 9px 9px 0 0 ;
+	-fx-padding: 0;
+
+}
+
+.table-view .column-header-background{
+	-fx-background-color: #32a979;
+	-fx-border-color: transparent transparent rgba(255,255,255,0.3) transparent;
+	-fx-border-width: 1;
+	-fx-background-radius: 9px 9px 0 0;
+}
+
+.table-view .column-header, .table-view .filler {
+	-fx-background-color: transparent;
+	-fx-size: 30px;
+	-fx-border-width: 0 0 0 0;
+	-fx-text-fill: #d8d8d8;
+}
+
+.table-view .column-header .label {
+	-fx-font-size: 14px;
+	-fx-font-weight:bold;
+	-fx-font-family:"Roboto", Helvetica, Arial, sans-serif;
+	-fx-text-fill: #ffffff;
+	-fx-alignment: center;
+}
+
+.table-cell {
+	-fx-font-size: 15px;
+	-fx-font-family:"Roboto", Helvetica, Arial, sans-serif;
+	-fx-text-fill: black;
+	-fx-alignment: center;
+	-fx-cursor: hand;
+}
+.table-row-cell{
+	-fx-table-cell-border-color: transparent;
+
+}
+.table-view:focused .table-row-cell:filled:focused:selected {
+	-fx-background-color: rgba(50, 169, 121, 0.3);
+	-fx-font-weight: bold;
+}
+
+#orderPane .checkbox1 .checkboxBox { -fx-cursor: hand; -fx-border-color: #d9d9d9; -fx-background-color: white; -fx-padding: 6px; -fx-border-radius: 3px; -fx-background-radius: 3px; }
+#orderPane .checkbox1 .checkboxBox:hover { -fx-border-color: rgb(69, 93, 199); }
+#orderPane .checkbox1 Text { -fx-font-size: 14px; }
+
+#orderPane #successfulOrderWrapper { -fx-background-color: white; -fx-background-radius: 12px; -fx-padding: 30px; }
+#orderPane #successfulThankYou { -fx-font-size: 36px; }
+#orderPane #successfulInfo { -fx-font-size: 16px; }
+
+.orderItemName { -fx-font-size: 14px; }
+.orderItemValue { -fx-font-size: 14px; -fx-font-weight: bold; }
+
+#thresholdError,#noStockError,#outOfStockError, #validateError, #validateErrorCar { -fx-padding: 6px; -fx-background-color: #ed3939; -fx-background-radius: 6px; }
+#thresholdError Text,#noStockError Text,#outOfStockError Text, #validateError Text, #validateErrorCar Text { -fx-fill: white; -fx-font-size: 14px; }
+
+#orderPane #totalValue, #orderPane #totalText { -fx-font-size: 16px; }
+
+.dialog .dialogContent { -fx-background-color: white; -fx-padding: 12px; }
+.dialog  { -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 10, 0.5, 0, 3); }
+.dialog .dialogTitle BorderPane { -fx-background-color: #ed3939; -fx-padding: 6px; -fx-background-radius: 3px; -fx-cursor: hand; }
+.dialog .dialogTitle BorderPane:hover { -fx-opacity: 0.8; }
+.dialog .dialogTitle Text { -fx-font-size: 18px; }
+
+#vehicleInfo #noCarsPane {-fx-border-color: darkblue;}
+#vehicleInfo .checkbox1 .checkboxBox { -fx-cursor: hand; -fx-border-color: #d9d9d9; -fx-background-color: white; -fx-padding: 6px; -fx-border-radius: 3px; -fx-background-radius: 3px; }
+#vehicleInfo .checkbox1 .checkboxBox:hover { -fx-border-color: #455DC7; }
+#vehicleInfo .checkbox1 Text { -fx-font-size: 14px; }
+#vehicleInfo #validationPane {-fx-border-color: red;}
+
+#trackOrdersPane .order { -fx-background-color: white; -fx-background-radius: 6px; -fx-padding: 18px 12px; }
+#trackOrdersPane .order .title Text {  }
+#trackOrdersPane .order .status HBox { -fx-background-radius: 3px; -fx-padding: 6px 12px; }
+#trackOrdersPane .order .status .received { -fx-background-color: #32a966; }
+#trackOrdersPane .order .status .shipped { -fx-background-color: #455DC7; }
+#trackOrdersPane .order .status HBox Text { -fx-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; }
+
+.carList { -fx-background-color: transparent; }
+.carList .carListCar { -fx-padding: 9px 12px; -fx-background-color: #455DC7; -fx-background-radius: 6px; -fx-cursor: hand; }
+.carList .carListCar:hover { -fx-opacity: 0.9; }
+.carList .carListCar Text { -fx-font-size: 14px; -fx-fill: white; -fx-font-weight: bold; }
+.carList .selectedCar { -fx-background-color: #32a979 !important; }
+
+#personalInfo #ccPane:hover {-fx-cursor: hand; }
+#editCarPane #deleteCarPane:hover{-fx-cursor: hand;}
