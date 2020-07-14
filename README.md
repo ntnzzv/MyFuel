@@ -39,7 +39,7 @@ access to adjusting tarrifs, adding sales, customer managment and much more.
 ![Reports](https://github.com/ntnzzv/MyFuel-Petrolium-Inc./blob/master/App-Images/reports.PNG)
 
 ## Built With
-* Java
+* Programming languages: Java & CSS
 * [JavaFX](https://www.oracle.com/java/technologies/javase/javafx-docs.html) - JavaFX on the front-end
 * [MySQL](https://www.mysql.com/) - MySQL DBMS
 
